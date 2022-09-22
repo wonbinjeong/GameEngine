@@ -6,12 +6,46 @@
 	objectVersion = 55;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F91546E828D97E7500D29A26 /* Sandbox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F91546E728D97E7500D29A26 /* Sandbox.cpp */; };
+		F91546F628DC17F800D29A26 /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F91546F428DC17F800D29A26 /* Application.cpp */; };
+		F91546F728DC17F800D29A26 /* Application.hpp in Headers */ = {isa = PBXBuildFile; fileRef = F91546F528DC17F800D29A26 /* Application.hpp */; };
+		F9A7AA0228DC1E5A00A1AD5E /* Sandbox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F91546E728D97E7500D29A26 /* Sandbox.cpp */; };
+		F9A7AA0528DC1EBA00A1AD5E /* MainEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = F91546F028DC177F00D29A26 /* MainEngine.h */; };
+		F9A7AA0728DC2E4300A1AD5E /* EntryPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = F9A7AA0628DC242900A1AD5E /* EntryPoint.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F91546E328D97E7500D29A26 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		F91546D928D97E3100D29A26 /* libGameEngine.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libGameEngine.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		F91546E528D97E7500D29A26 /* Sandbox */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Sandbox; sourceTree = BUILT_PRODUCTS_DIR; };
+		F91546E728D97E7500D29A26 /* Sandbox.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Sandbox.cpp; sourceTree = "<group>"; };
+		F91546F028DC177F00D29A26 /* MainEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainEngine.h; sourceTree = "<group>"; };
+		F91546F428DC17F800D29A26 /* Application.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
+		F91546F528DC17F800D29A26 /* Application.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Application.hpp; sourceTree = "<group>"; };
+		F9A7AA0628DC242900A1AD5E /* EntryPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntryPoint.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F91546D728D97E3100D29A26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F91546E228D97E7500D29A26 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -24,6 +58,8 @@
 		F91546D028D97E3100D29A26 = {
 			isa = PBXGroup;
 			children = (
+				F91546E028D97E4700D29A26 /* MainEngine */,
+				F91546E628D97E7500D29A26 /* Sandbox */,
 				F91546DA28D97E3100D29A26 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -32,8 +68,36 @@
 			isa = PBXGroup;
 			children = (
 				F91546D928D97E3100D29A26 /* libGameEngine.dylib */,
+				F91546E528D97E7500D29A26 /* Sandbox */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F91546E028D97E4700D29A26 /* MainEngine */ = {
+			isa = PBXGroup;
+			children = (
+				F91546F228DC17A800D29A26 /* MainEngine */,
+				F91546F028DC177F00D29A26 /* MainEngine.h */,
+			);
+			path = MainEngine;
+			sourceTree = "<group>";
+		};
+		F91546E628D97E7500D29A26 /* Sandbox */ = {
+			isa = PBXGroup;
+			children = (
+				F91546E728D97E7500D29A26 /* Sandbox.cpp */,
+			);
+			path = Sandbox;
+			sourceTree = SOURCE_ROOT;
+		};
+		F91546F228DC17A800D29A26 /* MainEngine */ = {
+			isa = PBXGroup;
+			children = (
+				F91546F428DC17F800D29A26 /* Application.cpp */,
+				F91546F528DC17F800D29A26 /* Application.hpp */,
+				F9A7AA0628DC242900A1AD5E /* EntryPoint.h */,
+			);
+			path = MainEngine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -43,6 +107,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9A7AA0728DC2E4300A1AD5E /* EntryPoint.h in Headers */,
+				F91546F728DC17F800D29A26 /* Application.hpp in Headers */,
+				F9A7AA0528DC1EBA00A1AD5E /* MainEngine.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +133,23 @@
 			productReference = F91546D928D97E3100D29A26 /* libGameEngine.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
+		F91546E428D97E7500D29A26 /* Sandbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F91546E928D97E7500D29A26 /* Build configuration list for PBXNativeTarget "Sandbox" */;
+			buildPhases = (
+				F91546E128D97E7500D29A26 /* Sources */,
+				F91546E228D97E7500D29A26 /* Frameworks */,
+				F91546E328D97E7500D29A26 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sandbox;
+			productName = Sandbox;
+			productReference = F91546E528D97E7500D29A26 /* Sandbox */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -76,6 +160,9 @@
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					F91546D828D97E3100D29A26 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					F91546E428D97E7500D29A26 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
@@ -94,6 +181,7 @@
 			projectRoot = "";
 			targets = (
 				F91546D828D97E3100D29A26 /* GameEngine */,
+				F91546E428D97E7500D29A26 /* Sandbox */,
 			);
 		};
 /* End PBXProject section */
@@ -103,6 +191,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F91546F628DC17F800D29A26 /* Application.cpp in Sources */,
+				F9A7AA0228DC1E5A00A1AD5E /* Sandbox.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F91546E128D97E7500D29A26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F91546E828D97E7500D29A26 /* Sandbox.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +340,26 @@
 			};
 			name = Release;
 		};
+		F91546EA28D97E7500D29A26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXCLUDED_ARCHS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		F91546EB28D97E7500D29A26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXCLUDED_ARCHS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -259,6 +377,15 @@
 			buildConfigurations = (
 				F91546DE28D97E3100D29A26 /* Debug */,
 				F91546DF28D97E3100D29A26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F91546E928D97E7500D29A26 /* Build configuration list for PBXNativeTarget "Sandbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F91546EA28D97E7500D29A26 /* Debug */,
+				F91546EB28D97E7500D29A26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
