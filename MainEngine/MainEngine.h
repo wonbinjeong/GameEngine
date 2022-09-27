@@ -9,6 +9,7 @@
 #define MainEngine_h
 
 #include "MainEngine/Application.hpp"
+#include "MainEngine/Log.hpp"
 
 // ---Entry Point---//
 #include "MainEngine/EntryPoint.h"

@@ -13,8 +13,8 @@ Application::~Application()
 
 void Application::Run()
 {
+    printf("hello world");
     while (true) {
-        printf("hello world");
     }
 }
 

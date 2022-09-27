@@ -13,6 +13,9 @@
 		F9A7AA0228DC1E5A00A1AD5E /* Sandbox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F91546E728D97E7500D29A26 /* Sandbox.cpp */; };
 		F9A7AA0528DC1EBA00A1AD5E /* MainEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = F91546F028DC177F00D29A26 /* MainEngine.h */; };
 		F9A7AA0728DC2E4300A1AD5E /* EntryPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = F9A7AA0628DC242900A1AD5E /* EntryPoint.h */; };
+		F9A7AA0B28DC347B00A1AD5E /* libGameEngine.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F91546D928D97E3100D29A26 /* libGameEngine.dylib */; };
+		F9A7AA0E28E2A16400A1AD5E /* Log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9A7AA0C28E2A16400A1AD5E /* Log.cpp */; };
+		F9A7AA0F28E2A16400A1AD5E /* Log.hpp in Headers */ = {isa = PBXBuildFile; fileRef = F9A7AA0D28E2A16400A1AD5E /* Log.hpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +38,8 @@
 		F91546F428DC17F800D29A26 /* Application.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
 		F91546F528DC17F800D29A26 /* Application.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Application.hpp; sourceTree = "<group>"; };
 		F9A7AA0628DC242900A1AD5E /* EntryPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntryPoint.h; sourceTree = "<group>"; };
+		F9A7AA0C28E2A16400A1AD5E /* Log.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Log.cpp; sourceTree = "<group>"; };
+		F9A7AA0D28E2A16400A1AD5E /* Log.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Log.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9A7AA0B28DC347B00A1AD5E /* libGameEngine.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +67,7 @@
 				F91546E028D97E4700D29A26 /* MainEngine */,
 				F91546E628D97E7500D29A26 /* Sandbox */,
 				F91546DA28D97E3100D29A26 /* Products */,
+				F9A7AA0A28DC347B00A1AD5E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,8 +103,17 @@
 				F91546F428DC17F800D29A26 /* Application.cpp */,
 				F91546F528DC17F800D29A26 /* Application.hpp */,
 				F9A7AA0628DC242900A1AD5E /* EntryPoint.h */,
+				F9A7AA0C28E2A16400A1AD5E /* Log.cpp */,
+				F9A7AA0D28E2A16400A1AD5E /* Log.hpp */,
 			);
 			path = MainEngine;
+			sourceTree = "<group>";
+		};
+		F9A7AA0A28DC347B00A1AD5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +126,7 @@
 				F9A7AA0728DC2E4300A1AD5E /* EntryPoint.h in Headers */,
 				F91546F728DC17F800D29A26 /* Application.hpp in Headers */,
 				F9A7AA0528DC1EBA00A1AD5E /* MainEngine.h in Headers */,
+				F9A7AA0F28E2A16400A1AD5E /* Log.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +174,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					New,
+				);
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					F91546D828D97E3100D29A26 = {
@@ -191,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9A7AA0E28E2A16400A1AD5E /* Log.cpp in Sources */,
 				F91546F628DC17F800D29A26 /* Application.cpp in Sources */,
 				F9A7AA0228DC1E5A00A1AD5E /* Sandbox.cpp in Sources */,
 			);
@@ -320,11 +341,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = /Users/wonbin/Desktop/GameEngine/GameEngine/MainEngine/include;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -332,11 +356,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = /Users/wonbin/Desktop/GameEngine/GameEngine/MainEngine/include;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
@@ -345,6 +372,8 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				EXCLUDED_ARCHS = "";
+				HEADER_SEARCH_PATHS = /Users/wonbin/Desktop/GameEngine/GameEngine/MainEngine/include;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "";
 			};
@@ -355,6 +384,8 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				EXCLUDED_ARCHS = "";
+				HEADER_SEARCH_PATHS = /Users/wonbin/Desktop/GameEngine/GameEngine/MainEngine/include;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "";
 			};

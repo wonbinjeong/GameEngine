@@ -12,6 +12,10 @@ extern MainEngine::Application* MainEngine::CreateApplication();
 
 int main(int argc, char** argv)
 {
+    MainEngine::Log::Init();
+    ME_CORE_WARN("Initialized log!");
+    ME_INFO("Hello!");
+    
     auto app = MainEngine::CreateApplication();
     app->Run();
     delete app;
